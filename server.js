@@ -24,9 +24,7 @@ app.use(morgan('tiny'))
 app.use('/apiV1', require('./Routes/auth'))
 app.use('/apiV1', require('./Routes/Posts'))
 
-app.get('/try', JWT_auth, (req, res) => {
-    res.status(200).json({ user: req.user })
-})
+
 
 //? path
 
